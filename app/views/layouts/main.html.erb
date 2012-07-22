@@ -14,8 +14,8 @@
         <param value="shap_ARgroup.swf" name="movie">
       </object>
     </div>
-    <div class="top-line"></div>
-    <div class="top-menu">
+    <div class="top_line"></div>
+    <div class="top_menu">
       <ul>
 <% @menu.each_pair do |key, value| %>
         <li><%= link_to value, {:title => key} do %>
@@ -28,23 +28,23 @@
     <div class="top_c"></div>
     <div class="c_bg">
       <div class="c_bg_inner">
-        <div>
+        <div class="links">
 <% @menu.each_pair do |key, value| %>
           <%= link_to value, {:title => key} do %>
             <div></div>
           <% end %>
 <% end %>
         </div>
-        <div><object width="430" height="256" data="/prezentation.swf" type="application/x-shockwave-flash">
+        <div class="flash"><object width="430" height="256" data="/prezentation.swf" type="application/x-shockwave-flash">
           <param name="wmode" value="transparent">
           <param value="prezentation.swf" name="movie">
         </object></div>
-        <div><%= link_to :about_project %></div>
+        <div class="about"><%= link_to "О продукте", :about_product %></div>
         <div class="clear">&#160;</div>
       </div>
       <div class="c_content">
         <div class="c_content_l">
-          <div class="c_content_l_i">
+          <div>
             <div><object width="130" height="600" data="/rest_ban1.swf" type="application/x-shockwave-flash">
               <param name="wmode" value="transparent"> 
               <param value="rest_ban1.swf" name="movie">

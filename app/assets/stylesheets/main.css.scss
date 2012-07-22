@@ -8,7 +8,7 @@ $white: #fff;
 }
 body {
   color: $black;
-  font: 11px, 'Verdana';
+  font: 11px 'Verdana';
   background-color: $black;
 }
 img {
@@ -51,6 +51,102 @@ a {
       width: 140px;
       margin-left: 5px;
       text-decoration: none;
+      a:hover {
+        background: url("/assets/templates/rest/i/l_menu_h.gif") no-repeat scroll 0 0 transparent !important;
+        color: $white;
+        display: block;
+        height: 23px;
+        width: 140px;
+        text-decoration: underline;
+      }
+      div {
+         width: 140px;
+         height: 23px;
+         div {
+           margin-left: 0px; 
+           padding-top: 1px;
+           font-weight: bold;
+           font-size: 15px;
+         }
+      }
     }
   }
+  .active {
+    background: url("/assets/templates/rest/i/l_menu_h.gif") no-repeat scroll 0 0 transparent !important;
+    height: 23px;
+    width: 140px;
+    text-decoration: none;
+  }
+}
+.top_c{
+  width: 1229px;
+  height: 411px;
+  background: url('/assets/templates/rest/i/verh2.jpg') no-repeat 0 0;
+  margin-top: -6px;
+}
+.c_bg{
+  width: 1229px;
+  min-height: 350px;
+  background: url('/assets/templates/rest/i/c_bg.gif') repeat-y 0 0;
+  table td {
+    padding:15px;
+  }
+}
+.c_bg_inner{
+  width: 335px;
+  margin-left: 370px;
+  padding-top: 10px;
+  .links {
+    margin-top: -390px;
+    margin-left: -285px;
+    div {
+      width: 160px;
+      height: 60px;
+    }
+  }
+  .flash {
+    margin-top: -229px;
+    margin-left: 28px
+  }
+  .about {
+    margin-top: -65px;
+    margin-left: 657px;
+  }
+}
+.c_content{
+  width: 1229px;
+  padding-top: 10px;
+}
+.c_content_l{
+  width: 176px;
+  float: left;
+  div {
+    width: 174px;
+    padding-left: 10px;
+    div {
+      margin-left:15px;
+    }
+  }
+}
+.c_content_c{
+  width: 890px;
+  float: left;
+  border-right: 2px solid #9e9e9e;
+  border-left: 2px solid #9e9e9e;
+  min-height: 300px;
+}
+.c_content_c_i{
+  padding: 0px 10px;
+  font-size:16px;
+}
+.c_content_r{
+  float: left;
+}
+
+.clear {
+  clear: both;
+  font-size: 1px;
+  height: 1px;
+  line-height: 1px;
+  margin: 0 0 -1px;
 }
