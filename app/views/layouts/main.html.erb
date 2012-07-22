@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>AR Group | DIGITAL MENU</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="main">
+    <div class="top">
+      <object width="1230" height="376" data="/shap_ARgroup.swf" type="application/x-shockwave-flash">
+        <param name="wmode" value="transparent">
+        <param value="shap_ARgroup.swf" name="movie">
+      </object>
+    </div>
+    <div class="top-line"></div>
+    <div class="top-menu">
+      <ul>
+<% @menu.each_pair do |key, value| %>
+        <li><%= link_to value, {:title => key} do %>
+          <div><div><%= key %></div></div>
+        <% end %></li>
+<% end %>
+      </ul>
+      <div class="clear">&#160;</div>
+    </div>
+    <div class="top_c"></div>
+    <div class="c_bg">
+      <div class="c_bg_inner">
+        <div>
+<% @menu.each_pair do |key, value| %>
+          <%= link_to value, {:title => key} do %>
+            <div></div>
+          <% end %>
+<% end %>
+        </div>
+        <div><object width="430" height="256" data="/prezentation.swf" type="application/x-shockwave-flash">
+          <param name="wmode" value="transparent">
+          <param value="prezentation.swf" name="movie">
+        </object></div>
+        <div><%= link_to :about_project %></div>
+        <div class="clear">&#160;</div>
+      </div>
+      <div class="c_content">
+        <div class="c_content_l">
+          <div class="c_content_l_i">
+            <div><object width="130" height="600" data="/rest_ban1.swf" type="application/x-shockwave-flash">
+              <param name="wmode" value="transparent"> 
+              <param value="rest_ban1.swf" name="movie">
+            </object></div>
+          </div>
+        </div>
+        <div class="c_content_c">
+          <div class="c_content_c_i">
+<%= yield %>
+          </div>
+        </div>
+        <div class="c_content_r">
+          <div class="c_content_r_i">
+            <div><object width="130" height="600" data="/rest_ban2.swf" type="application/x-shockwave-flash">
+              <param name="wmode" value="transparent">
+              <param value="rest_ban2.swf" name="movie">
+            </object></div>
+          </div>
+        </div>
+        <div class="clear">&#160;</div>
+      </div>
+      <table width="100%">
+        <tr>
+          <td align="right"><object width="580" height="150" data="/RUSkompany.swf" type="application/x-shockwave-flash">
+            <param name="wmode" value="transparent">
+            <param value="RUSkompany.swf" name="movie"></object></td>
+          <td width="50%"></td>
+          <td align="left"><object width="580" height="150" data="/BL_banner.swf" type="application/x-shockwave-flash"> 
+            <param name="wmode" value="transparent">
+            <param value="BL_banner.swf" name="movie"></object></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

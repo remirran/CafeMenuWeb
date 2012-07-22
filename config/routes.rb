@@ -1,4 +1,12 @@
 Dmenu::Application.routes.draw do
+  root :to => 'main#index'
+  get 'about_company' => 'main#about_company'
+  get 'about_product' => 'main#about_product'
+  get 'contacts' => 'main#contacts'
+  devise_for :users
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

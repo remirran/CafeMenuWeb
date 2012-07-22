@@ -1,0 +1,56 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$black: #000;
+$white: #fff;
+* {
+  margin: 0;
+}
+body {
+  color: $black;
+  font: 11px, 'Verdana';
+  background-color: $black;
+}
+img {
+  border: medium none;
+}
+a {
+  color: $black;
+}
+.main {
+  width: 1229px;
+  min-height: 800px;
+  margin: 0 auto;
+}
+.top {
+  width: 1229px;
+  height: 38px;
+  background: url('/assets/c_bg.gif') repeat-y 0 0;
+  object {
+    margin-top: 24px;
+  }
+}
+.top_line {
+  width: 1229px;
+  height: 2px;
+  background: url('/assets/top_line.gif') repeat-y 0 0;
+}
+.top_menu {
+  margin: -18px 0px 0px 314px;
+  width: 1580px;
+  height: 24px;
+  ul {
+    list-style-type: none;
+    padding: 2px 0 0 2px;
+    li {
+      background: url("/assets/l_menu.gif") no-repeat scroll 0 0 transparent !important;
+      color: $white;
+      float: left;
+      height: 23px;
+      text-align: center;
+      width: 140px;
+      margin-left: 5px;
+      text-decoration: none;
+    }
+  }
+}
