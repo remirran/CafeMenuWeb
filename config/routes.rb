@@ -1,11 +1,16 @@
 Dmenu::Application.routes.draw do
   root :to => 'main#index'
-  get 'about_company' => 'main#about_company'
-  get 'about_product' => 'main#about_product'
-  get 'contacts' => 'main#contacts'
+  match 'about_company' => 'main#about_company'
+  match 'about_product' => 'main#about_product'
+  match 'contacts' => 'main#contacts'
   devise_for :users
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  match 'demo' => 'demo#index'
+  namespace :demo do
+    resources :cousine
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

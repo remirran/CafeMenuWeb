@@ -52,7 +52,7 @@ a {
       margin-left: 5px;
       text-decoration: none;
       a:hover {
-        background: url("/assets/templates/rest/i/l_menu_h.gif") no-repeat scroll 0 0 transparent !important;
+        background: url("/assets/l_menu_h.gif") no-repeat scroll 0 0 transparent !important;
         color: $white;
         display: block;
         height: 23px;
@@ -72,7 +72,7 @@ a {
     }
   }
   .active {
-    background: url("/assets/templates/rest/i/l_menu_h.gif") no-repeat scroll 0 0 transparent !important;
+    background: url("/assets/l_menu_h.gif") no-repeat scroll 0 0 transparent !important;
     height: 23px;
     width: 140px;
     text-decoration: none;
@@ -81,13 +81,13 @@ a {
 .top_c{
   width: 1229px;
   height: 411px;
-  background: url('/assets/templates/rest/i/verh2.jpg') no-repeat 0 0;
+  background: url('/assets/verh2.jpg') no-repeat 0 0;
   margin-top: -6px;
 }
 .c_bg{
   width: 1229px;
   min-height: 350px;
-  background: url('/assets/templates/rest/i/c_bg.gif') repeat-y 0 0;
+  background: url('/assets/c_bg.gif') repeat-y 0 0;
   table td {
     padding:15px;
   }
