@@ -5,3 +5,6 @@ ru:
       product: "О продукте"
       partners: "Партнерам"
       contacts: "Контакты"
+      demo: "Демо"
+    registration: "Регистрация"
+    login: "Вход"

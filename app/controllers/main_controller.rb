@@ -15,6 +15,12 @@ class MainController < ApplicationController
 
   private
   def set_menu
-   @menu = {t("menu.about.company") => :about_company, t("menu.about.product") => :about_product, t("menu.about.partners") => :root, t("menu.about.contacts") => :contacts}
+   @menu = {t("menu.about.company") => :about_company, 
+     t("menu.about.product") => :about_product, 
+     t("menu.about.partners") => :root, 
+     t("menu.about.contacts") => :contacts,
+     t("menu.about.demo") => :demo,
+     t("menu.registration") => :new_user_registration,
+     t("menu.login") => :new_user_session}
   end
 end

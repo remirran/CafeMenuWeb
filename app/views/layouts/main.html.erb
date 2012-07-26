@@ -1,18 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>AR Group | DIGITAL MENU</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "main", :media => "all" %>
+  <%= javascript_include_tag "main" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="main">
     <div class="top">
+<!--
       <object width="1230" height="376" data="/shap_ARgroup.swf" type="application/x-shockwave-flash">
         <param name="wmode" value="transparent"/>
         <param value="shap_ARgroup.swf" name="movie"/>
       </object>
+-->
     </div>
     <div class="top_line"></div>
     <div class="top_menu">
@@ -29,7 +31,7 @@
     <div class="c_bg">
       <div class="c_bg_inner">
         <div class="links">
-<% @menu.each_pair do |key, value| %>
+<% Hash[@menu.first(4)].each_pair do |key, value| %>
           <%= link_to value, {:title => key} do %>
             <div></div>
           <% end %>
@@ -39,7 +41,11 @@
           <param name="wmode" value="transparent"/>
           <param value="prezentation.swf" name="movie"/>
         </object></div>
-        <div class="about"><%= link_to "О продукте", :about_product %></div>
+        <div class="about">
+          <%= link_to :about_product, {:title => "О продукте"} do %>
+            <div></div>
+          <% end %>
+        </div>
         <div class="clear">&#160;</div>
       </div>
       <div class="c_content">
@@ -68,11 +74,11 @@
       </div>
       <table width="100%">
         <tr>
-          <td align="right"><object width="580" height="150" data="/RUSkompany.swf" type="application/x-shockwave-flash">
+          <td align="right" class="adv"><object width="580" height="150" data="/RUSkompany.swf" type="application/x-shockwave-flash">
             <param name="wmode" value="transparent"/>
             <param value="RUSkompany.swf" name="movie"/></object></td>
           <td width="50%"></td>
-          <td align="left"><object width="580" height="150" data="/BL_banner.swf" type="application/x-shockwave-flash"> 
+          <td align="left" class="adv"><object width="580" height="150" data="/BL_banner.swf" type="application/x-shockwave-flash"> 
             <param name="wmode" value="transparent"/>
             <param value="BL_banner.swf" name="movie"/></object></td>
         </tr>
