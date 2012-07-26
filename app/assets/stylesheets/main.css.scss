@@ -88,8 +88,20 @@ a {
   width: 1229px;
   min-height: 350px;
   background: url('/assets/c_bg.gif') repeat-y 0 0;
-  table td.adv {
-    padding:15px;
+  table {
+    width: 100%;
+    .adv {
+      padding:15px;
+    }
+    .mid {
+      width: 50%;
+    }
+    .left {
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+    }
   }
 }
 .c_bg_inner{
