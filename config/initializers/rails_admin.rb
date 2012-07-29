@@ -10,7 +10,7 @@ RailsAdmin.config do |config|
   config.current_user_method { current_user } # auto-generated
 
   # If you want to track changes on your models:
-  config.audit_with :history, [User, Role]
+  config.audit_with :history, [User, Role, Order]
 
   # Or with a PaperTrail: (you need to install it first)
   # config.audit_with :paper_trail, User
@@ -76,6 +76,21 @@ RailsAdmin.config do |config|
   # end
 
   # Your model's configuration, to help you get started:
+  config.model Restaurant do
+    field :name, :string
+    field :latin_name,:string
+    field :city, :belongs_to_association
+    field :users, :has_and_belongs_to_many_association
+    field :check_footer, :text do
+      ckeditor true
+    end
+    field :check_header, :text do
+      ckeditor true
+    end
+    configure :users do
+      inverse_of :restaurants
+    end
+  end
 
   # All fields marked as 'hidden' won't be shown anywhere in the rails_admin unless you mark them as visible. (visible(true))
 

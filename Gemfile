@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '>= 3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
 	gem 'sqlite3'
-	gem 'linecache19', :git => 'git://github.com/mark-moseley/linecache'
-	gem 'ruby-debug-base19x', '~> 0.11.30.pre4'
-	gem 'ruby-debug19', :require => 'ruby-debug'
+	#gem 'linecache19', :git => 'git://github.com/mark-moseley/linecache'
+  gem 'linecache19', '>= 0.5.12'
+	gem 'debugger'
 end
 
 group :production do
@@ -52,3 +52,4 @@ gem 'jquery-rails'
 
 
 gem "devise"
+gem "ckeditor"
